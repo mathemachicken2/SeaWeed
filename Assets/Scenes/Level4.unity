@@ -334,6 +334,139 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &504266771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504266773}
+  - component: {fileID: 504266772}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &504266772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504266771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93342199551398045a739bb1842461c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlideInUI
+  image: {fileID: 1096812876}
+  startPosition: {x: 700, y: -80}
+  targetPosition: {x: 269, y: -30}
+  delay: 2
+  slideDuration: 0.75
+--- !u!4 &504266773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504266771}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 414.24097, y: 0.00001, z: 2630.0703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &929657786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929657789}
+  - component: {fileID: 929657788}
+  - component: {fileID: 929657787}
+  m_Layer: 0
+  m_Name: DialogueData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &929657787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929657786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73a0bcbd8054f441bbe4363b2d0b8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speaker: You
+    text: Where am I??
+  - speaker: Nadjaska
+    text: Miewmmoooo
+  - speaker: You
+    text: Are you a cat? What is going on??
+  - speaker: Nadjaska
+    text: 'The milk made me like this. '
+  - speaker: You
+    text: 'MILK?? WHERE?? '
+  - speaker: Nadjaska
+    text: 'There''s none here. I used to drink it sometimes when I lived down south.
+      In the end it consumed me and I had to make a change. That''s why I moved up
+      here.  '
+  - speaker: You
+    text: 'Why is it so pink here? '
+  - speaker: Nadjaska
+    text: 'My human pet''s teeth fell out, so I''ve been using the fluids as paint.
+      Do you want to paint with me? '
+  - speaker: You
+    text: Your human pet? What are you talking about?
+  - speaker: You
+    text: Nothing. You have lovely teeth. Let's paint.
+  question: Do you????
+  option1Text: No thanks.
+  option2Text: Yes actually, let's.
+--- !u!114 &929657788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929657786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4087463b2e3634eb9c21a5d9be64b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+--- !u!4 &929657789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929657786}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 490.40393, y: 371.22546, z: -585.71497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987597169
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,3 +894,5 @@ SceneRoots:
   - {fileID: 151925938}
   - {fileID: 487990284}
   - {fileID: 1595032646}
+  - {fileID: 929657789}
+  - {fileID: 504266773}
