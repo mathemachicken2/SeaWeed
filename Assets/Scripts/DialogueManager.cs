@@ -95,12 +95,17 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(DialogueData dialogue)
     {
         Debug.Log("Starting dialogue: " + dialogue.name);
-        dialoguePanel.SetActive(true);
+        StartCoroutine(ShowDialogueAfterDelay(3f));
         currentDialogue = dialogue;
         index = 0;
         choicePanel.SetActive(false);
 
         ShowCurrentLine();
+    }
+    private IEnumerator ShowDialogueAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        dialoguePanel.SetActive(true);
     }
 
     public void NextLine()
@@ -143,6 +148,7 @@ public class DialogueManager : MonoBehaviour
 
     void ShowChoices()
     {
+        dialoguePanel.SetActive(false);
         choicePanel.SetActive(true);
 
         option1.GetComponentInChildren<TMP_Text>().text =
