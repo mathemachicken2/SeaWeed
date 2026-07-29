@@ -88,9 +88,6 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueData newDialogue = FindFirstObjectByType<DialogueData>();
 
-      
-
-
     }
     public void StartDialogue(DialogueData dialogue)
     {
