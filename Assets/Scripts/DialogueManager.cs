@@ -124,6 +124,7 @@ public class DialogueManager : MonoBehaviour
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.dialogueSound);
 
         typingCoroutine = StartCoroutine(TypeText(currentDialogue.lines[index].text));
     }
