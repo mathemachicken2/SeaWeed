@@ -9,6 +9,7 @@ public class SceneController : MonoBehaviour
     public void LoadNextScene()
     {
         StartCoroutine(FadeAndLoadNext());
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.enterSceneChangeSound);
     }
 
     IEnumerator FadeAndLoadNext()
@@ -34,6 +35,7 @@ public class SceneController : MonoBehaviour
     IEnumerator FadeAndLoadMainMenu()
     {
         yield return imageOverlay.FadeToWhite();
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.endGameSound);
 
         SceneManager.LoadScene("MainMenu");
 
