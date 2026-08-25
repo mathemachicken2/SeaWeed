@@ -45,7 +45,10 @@ public class HoverClickEffect : MonoBehaviour
     void OnMouseDown()
     {
         clickCount++;
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.milkingSound);
+        AudioSource source = AudioManager.Instance.sfxSource;
+        source.clip = AudioManager.Instance.milkingSound;
+        source.time = 2f; // Start 3 seconds into the clip
+        source.Play();
         // Play animation
         if (animator != null)
             animator.SetTrigger("Hover");
