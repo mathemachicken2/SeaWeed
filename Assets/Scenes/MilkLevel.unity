@@ -243,10 +243,8 @@ MonoBehaviour:
   - speaker: You
     text: 'I didn''t even know this existed. '
   - speaker: Mooma
-    text: 'Well it''s been around long enough. Actually, it was the first thing to
-      ever be created. Some of the milk here''s been stored for hundreds of years.
-      Good thing milk never goes off.
-
+    text: 'Well it''s been around long enough. Some of the milk here''s been stored
+      for hundreds of years. Good thing milk never goes off.
 
       Are you thirsty? '
   - speaker: You
@@ -20078,7 +20076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

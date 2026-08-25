@@ -1914,7 +1914,7 @@ MonoBehaviour:
   scene4Ambient: {fileID: 8300000, guid: 027f873076e1bd74780a7c7a675d37bd, type: 3}
   endingAmbient: {fileID: 8300000, guid: 027f873076e1bd74780a7c7a675d37bd, type: 3}
   dialogueSound: {fileID: 8300000, guid: 0e0e9d7517f5235438a5e5f79894d31d, type: 3}
-  milkingSound: {fileID: 8300000, guid: 0e0e9d7517f5235438a5e5f79894d31d, type: 3}
+  milkingSound: {fileID: 8300000, guid: e43e3d2b1885476419681df195e4c169, type: 3}
   enterSceneChangeSound: {fileID: 8300000, guid: 7fded69eced0b2d4aa7344e3dfa66bff, type: 3}
   endGameSound: {fileID: 8300000, guid: 4d1a72b13cc79e0498830b7c96548e52, type: 3}
 --- !u!4 &1908448292
